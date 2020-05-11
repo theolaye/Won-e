@@ -1,0 +1,512 @@
+.example-card {
+    max-width: 1500px;
+    max-height: 1000px;
+    
+  }
+  .sample_container {
+    max-width: 500px;
+    margin: auto;
+    min-height: 500px;
+  }
+  
+  /* Card Customizations */
+  
+  .e-custom-card {
+    position: relative;
+    margin-top: 10px;
+    overflow: visible;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: 0.2s;
+    border-width: 1px;
+    padding: 1px;
+  }
+  
+  .e-custom-card.e-card:hover {
+    border-width: 1px;
+    padding: 1px;
+  }
+  
+  .e-custom-card :nth-child(2) .e-card-header-title.name {
+    margin-top: 10px;
+  }
+  
+  .sample_container p.avatar-content {
+    line-height: 20px;
+    font-family: inherit;
+  }
+  
+  .e-custom-card .e-card-header {
+    text-align: center;
+  }
+  
+  .e-custom-card .e-avatar {
+    font-size: 20px;
+    position: absolute;
+    top: calc(0% - 1.5em);
+    left: calc(50% - 1.5em);
+    box-shadow: 0 16px 28px -8px rgba(0, 0, 0, .36), 0 4px 15px 0 rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+  }
+  
+  .e-card.e-custom-card :nth-child(3) {
+    padding: 12px 0px 20px 0px;
+    height: 100px;
+  }
+  
+  .e-custom-card.e-card .e-card-header .e-card-header-caption .e-card-header-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    color: rgba(83, 101, 132, 0.65);
+    text-shadow: 0 0 0.1px;
+  }
+  
+  .e-custom-card.e-card .e-card-header .e-card-header-caption .e-card-sub-title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: normal;
+    color: rgba(86, 90, 97, 0.65);
+    text-shadow: 0 0 0.1px;
+  }
+  
+  .e-custom-card.e-card .e-card-content {
+    overflow: visible;
+    width: auto;
+    margin: 0px 10px 0 10px;
+    word-spacing: 1px;
+  }
+  
+  .avatar-content {
+    color: rgba(250, 200, 130, 0.6);
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(94, 94, 94);
+    border: none;
+    padding: 0;
+    font-size: 14px;
+  }
+  
+  .avatar-content {
+    margin-bottom: 0;
+  }
+  
+  .sample_container .name {
+    margin-top: 5px;
+  }
+  
+  .highcontrast .e-custom-card.e-card .avatar-content {
+    color: rgba(255, 255, 255, 0.84);
+  }
+  
+  .highcontrast .e-custom-card.e-card .e-card-header .e-card-header-caption .e-card-sub-title {
+    color: rgba(255, 255, 255, 0.45);
+  }
+  
+  .highcontrast .e-custom-card.e-card .e-card-header .e-card-header-caption .e-card-header-title {
+    color: rgba(255, 255, 255, 0.84);
+  }
+  .example-header-image {
+    background-size: 10px;
+  }
+  #users{
+    font-family: "Trebuchet MS"Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    height:50% ;
+  }
+  h3{
+    text-align: center;
+    color: blueviolet;
+  }
+  tr:nth-child(even){background-color: whitesmoke;}
+  tr:hover{background-color: whitesmoke;}
+  th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: blueviolet;
+    color:white;
+  }
+  .container {
+    padding: 20px;
+  }
+  h5 {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  .btn-floating {
+    padding: 5px 10px;
+    background: #fff;
+    margin: 10px 3px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  body {
+    align-items: center;
+    background-color: black;
+    background-image: ("assets/Sonatel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, .45);
+    display: flex;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14pt;
+    justify-content: center;
+    text-align: center;
+  }
+  blockquote {
+    font-family: 'Handlee', cursive;
+    font-size: 20pt; 
+    max-width: 580px;
+  }
+  
+  @media (max-width: 480px) {
+    blockquote {
+       font-size: 22pt;
+    }
+  }
+  
+  small {
+    display: block;
+    overflow: hidden;
+    font-size: 16pt;
+    padding: 10px 10px;
+    text-align: right;
+    height: 1em;
+  }
+  .note {
+    font-size: 10pt;
+  }
+  .word-wrapper {
+    display: inline-block;
+    position: relative;
+    text-align: start;
+    overflow: hidden; 
+    height: 1em;
+  }
+
+
+body { margin: 0; font-family: 'Playfair Display SC', serif; }
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body, html {
+    height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+a {
+    text-decoration: transparent;;
+}
+
+.container {
+    width: 10%;
+    margin: 0 auto;
+    padding: 1.3em;
+    display: grid;
+    grid-template-columns: 30% auto;
+
+    a {
+        color: white;
+    }
+}
+
+section {
+    width: 30%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+
+
+
+
+
+
+div.foo{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .letter{
+    display: inline-block;
+    font-weight: 900;
+    font-size: 8em;
+    margin: 0.2em;
+    position: relative;
+    color: #00B4F1;
+    transform-style: preserve-3d;
+    perspective: 400;
+    z-index: 1;
+  }
+  .letter:before, .letter:after{
+    position:absolute;
+    content: attr(data-letter);
+    transform-origin: top left;
+    top:0;
+    left:0;
+  }
+  .letter, .letter:before, .letter:after{
+    transition: all 0.3s ease-in-out;
+  }
+  .letter:before{
+    color: #fff;
+    text-shadow: 
+      -1px 0px 1px rgba(255,255,255,.8),
+      1px 0px 1px rgba(0,0,0,.8);
+    z-index: 3;
+    transform:
+      rotateX(0deg)
+      rotateY(-15deg)
+      rotateZ(0deg);
+  }
+  .letter:after{
+    color: rgba(0,0,0,.11);
+    z-index:2;
+    transform:
+      scale(1.08,1)
+      rotateX(0deg)
+      rotateY(0deg)
+      rotateZ(0deg)
+      skew(0deg,1deg);
+  }
+  .letter:hover:before{
+    color: #fafafa;
+    transform:
+      rotateX(0deg)
+      rotateY(-40deg)
+      rotateZ(0deg);
+  }
+  .letter:hover:after{
+    transform:
+      scale(1.08,1)
+      rotateX(0deg)
+      rotateY(40deg)
+      rotateZ(0deg)
+      skew(0deg,22deg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .logo {
+    font: 84px 'Arial Narrow', sans-serif;/* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+    color: #fefefe;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+  }
+  
+  /* stuff for both words */
+  .logo span {
+    position: relative;
+  }
+  .logo span:before,
+  .logo span:after {
+    content: '';
+    position: absolute;
+    border-width: 32px;/* makes a nice, big 64px square */
+    border-style: solid;
+    border-color: transparent;
+    height: 0;
+    z-index: 10;
+  }
+  
+  /* stuff for 1st word */
+  .logo .word1 {
+    color: #dc006c;
+    margin-right: -38px;
+    transform: rotateY(180deg);/* using Prefix free */
+    display: inline-block;/* required for transform */
+    z-index: 10;/* stack 1st word on top */
+  }
+  .logo .word1:before {
+    right: -4px;/* would be left, but we flipped the word */
+    top: -9px;
+    border-top-color: #282828;/* match background color */
+    border-right-color: #282828;/* would be left, but we flipped the word */
+  }
+  .logo .word1:after {
+    left: 17px;/* would be right, but we flipped the word */
+    bottom: -15px;
+    border-bottom-color: #282828;
+    border-left-color: #282828;/* would be right, but we flipped the word */
+  }
+  
+  /* stuff for 2nd word */
+  .logo .word2 {
+    z-index: 0;/* stack 2nd word below */
+  }
+  .logo .word2:before {
+    left: -4px;
+    top: -6px;
+    border-top-color: #282828;
+    border-left-color: #282828;
+  }
+  .logo .word2:after {
+    right: -4px;  
+    bottom: 4px;
+    border-bottom-color: #282828;
+    border-right-color: #282828;
+  }
+
+  p{
+    font-size:26px;
+}
+
+.l-box {
+    padding: 2em;
+}
+
+.header .pure-menu {
+    border-bottom-color: black;
+    border-radius: 0;
+}
+
+.pure-menu-link {
+    padding: 1em .7em;
+}
+
+.photo-box, .text-box {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    text-align: center;
+}
+
+.photo-box-thin {
+    height: 120px;
+}
+
+
+    .photo-box img {
+        max-width: 100%;
+        height: auto;
+        min-height: 250px;
+    }
+
+    .photo-box aside {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 1em 0.5em;
+        color: white;
+        width: 100%;
+        font-size: 80%;
+        text-align: right;
+        background: -moz-linear-gradient(top,  rgba(16,27,30,0) 0%, rgba(12,2,2,1) 90%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(16,27,30,0)), color-stop(90%,rgba(12,2,2,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(16,27,30,0) 0%,rgba(12,2,2,1) 90%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(16,27,30,0) 0%,rgba(12,2,2,1) 90%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(16,27,30,0) 0%,rgba(12,2,2,1) 90%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(16,27,30,0) 0%,rgba(12,2,2,1) 90%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00101b1e', endColorstr='#0c0202',GradientType=0 ); /* IE6-9 */
+
+    }
+
+    .photo-box aside span {
+        color: #aaa;
+    }
+
+        .photo-box aside span a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+.text-box {
+    background: rgb(49, 49, 49); /* bluish grey */
+    color: rgb(255, 190, 94); /* steel blue */
+}
+
+    .text-box-head {
+        color: #fff;
+        padding-bottom: 0.2em;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-size: 24px;
+    }
+
+    .text-box-subhead {
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+.form-box {
+    text-align: center;
+    font-size: 120%;
+    border-bottom: 1px solid #eee;
+}
+
+    .form-box .pure-button {
+        background-color: #61B842;
+        color: white;
+        vertical-align: top;
+        font-size: 85%;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        border-radius: 4px;
+        margin: 0.3em;
+    }
+    .pure-form input[type] {
+        margin: 0.3em auto;
+        text-align: center;
+    }
+
+.footer {
+    background: #111;
+    color: #666;
+    text-align: center;
+    padding: 1em;
+    font-size: 80%;
+}
+
+@media (min-width: 30em) {
+    .photo-box, .text-box {
+        text-align: left;
+    }
+
+    .photo-box-thin {
+        height: 250px;
+    }
+}

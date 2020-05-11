@@ -1,0 +1,85 @@
+<hr>
+<nav class="navbar navbar-default">
+<ul class="nav navbar-nar" >
+<li>
+  <a router="">lister</a>
+  
+</li>
+<br>
+
+</ul>
+<ul class="nav navbar-nar" >
+  <li>
+    <a router="">editer</a>
+    
+  </li>
+  <
+  
+  </ul>
+</nav>
+<hr>
+<form action="" #extraitForm="ngForm" (ngSubmit)="saveExtrait(extraitForm)">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h3 class="panel-title">
+Formulaire
+</h3>
+</div>
+<div class="panel-body">
+<div class="form-group">
+<label for="identifiant">Identifiant</label>
+<input type="text" name="identifiant" ngModel="ident" class="form-control">
+</div>
+<div class="form-group">
+  <label for="nompere">Nom du Père</label>
+  <input type="text" name="nompere" ngModel="nomper" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="nommere">Nom de la Mère</label>
+    <input type="text" name="nommere" ngModel="nommer" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="beneficiaire">Bénéficiaire</label>
+      <input type="text" name="beneficiaire" ngModel="benef" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="exemplaire">Nombre d'exemplaire</label>
+        <select id="nexemplaire" type="checkbox" name="exemplaire" ngModel="exemplaire" class="form-control" >
+            <option *ngFor="let exempl of exemplaire" value="exempl.id">
+              {{exempl.id}}
+            </option>
+          </select>
+        </div>
+      <div class="form-group">
+      <label for="phone">Numéro de téléphone</label>
+      <input type="phoneNumber" name="phone" ngModel="phone" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="genre">Genre</label>
+        <div class="form-control">
+<label for="">
+  <input type="radio" value="homme" class="radio-inline" ngModel="genre" name="genre">
+    Homme
+  </label>
+  <label for="" class="radio-inline">
+    <input type="radio" value="femme" ngModel="genre" name="genre">
+      femme
+    </label>
+        </div>
+        <input type="text" name="genre" ngModel="genre" class="form-control">
+        </div>
+      <div class="form-group">
+        <label for="agent">Agent</label>
+        <input type="text" name="agent" ngModel="ag" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" name="date" ngModel="date" class="form-control">
+          </div>
+</div>
+<div class="panel-footer">
+<button type="submit" class="btn btn-primary">enregistrer</button>
+</div>
+</div>
+</form>
+{{extraitForm.value |json}}
